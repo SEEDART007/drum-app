@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrumSet</title>
+</head>
+<style>
+    .drum{
+        border:4px solid black;
+        height:500px;
+        width:1000px;
+        margin-left: 90px;
+        padding:60px;
+        border-radius: 20px;
+    }
+    #drum{
+       background-image: url('./OIP.jpeg');
+    border: 2px solid red;
+    height:230px;
+    width:300px;
+    margin-left:40px;
+    border-radius: 30px;
+    background-size: cover;
+    
+   }
+   #drum1{
+    background-image: url('./photo-1519892300165-cb5542fb47c7.jpeg');
+    border: 2px solid red;
+    height:230px;
+    width:300px;
+    margin-left: 300px;
+    border-radius: 30px;
+    background-size: cover;
+   }
+   #drum2{
+    background-image: url('./artworks-ewn0n8mVk55lZ5uC-X8G1Iw-t500x500.jpg');
+    border: 2px solid red;
+    height:230px;
+    width:300px;
+    margin-top:90px;
+    margin-left:40px;
+    border-radius: 30px;
+    background-size: cover;
+   }
+   #drum3{
+    background-image: url('./PREMIER-GENISTA-5-PIECE-DRUM-KIT-OCHRE-DRUMAZON_01_720x720@3x.webp');
+    background-size: cover;
+    border: 2px solid red;
+    height:230px;
+    width:300px;
+    margin-top:90px;
+    margin-left: 300px;
+    border-radius: 30px;
+   }
+   .nav{
+    display: flex;
+   }
+   .nav1{
+    display:flex;
+   }
+   .h1{
+    display: flex;
+    justify-content: center;
+    color:azure;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   body{
+    background-color: black;
+   }
+   .hey{
+    z-index: -1;
+    border:3px solid black;
+    width:120px;
+    height:50px;
+    margin-left: 420px;
+    border-radius: 30px;
+    background-color: azure;
+
+
+   }
+   #drum:hover{
+    height:280px;
+    width:350px;
+   }
+   #drum1:hover{
+    height:280px;
+    width:350px;
+   }
+   #drum2:hover{
+    height:280px;
+    width:350px;
+   }
+   #drum3:hover{
+    height:280px;
+    width:350px;
+   }
+</style>
+<body>
+    <h1 class="h1">Drum Set</h1>
+    <div class="drum">
+        <div class="nav">
+
+            <div id="drum" onclick="func1()"></div>
+            <div id="drum1" onclick="func2()"></div>
+        </div>
+        <button id="hey" class="hey" onclick=gem()>▶️PLAY DEMO </button>
+        <div class="nav1">
+<audio src="./mixkit-bad-joke-drums-2893.wav" id="1"></audio>
+<audio src="./mixkit-drum-and-percussion-545.wav" id="2"></audio>
+<audio src="./mixkit-drum-joke-accent-579.wav" id="3"></audio>
+<audio src="./mixkit-drum-bass-hit-2294.wav" id="4"></audio>
+<audio src="./mixkit-drum-roll-566.wav" id="5"></audio>
+
+            <div id="drum2" onclick="func3()"></div>
+            <div id="drum3" onclick="func4()"></div>
+        </div>
+    </div>
+    <script>
+        function func1(){
+            let id1=document.getElementById('1');
+            id1.play()
+
+        } function func2(){
+            let id1=document.getElementById('2');
+            id1.play()
+
+        }
+        function func3(){
+            let id1=document.getElementById('3');
+            id1.play()
+
+        }
+        function func4(){
+            let id1=document.getElementById('4');
+            id1.play()
+
+        }
+       function gem(){
+       
+
+            let hey=document.getElementById('hey');
+            let id5=document.getElementById('5');
+
+            hey.innerHTML="⏸️PAUSE"
+            id5.play();
+            setTimeout(()=>{
+            hey.innerHTML="▶️PLAY DEMO"
+            },6000)}
+        
+    </script>
+    
+</body>
+</html>
